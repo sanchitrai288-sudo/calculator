@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+</head>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;700&display=swap');
+    *{
+        box-sizing: border-box;
+    }
+    body{
+    width: 100vw;
+    min-height: 100vh;
+    margin: 0;
+    display: grid;
+    place-items: center;
+    background:rgb(121, 227, 253);
+    }
+    .container {
+        width: 340px;
+        min-height: 520px;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        border-radius: 30px;
+        padding: 24px;
+        border: 5px solid rgba(0, 0, 0, 0.18);
+        box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.08);
+        background:url('img2.jpg') center/cover no-repeat;
+    }
+    .display{
+        height: 80px;
+        width: 295px;
+        border-radius: 14px;
+        border: 3px solid black;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        padding: 0 18px;
+        font-family: 'JetBrains Mono', monospace;
+        font-size: 28px;
+        font-weight: 500;
+        -webkit-backdrop-filter: blur(4px);
+        backdrop-filter: blur(4px);
+        color: yellow;
+        backdrop-filter: blur(4px);
+    }
+    .buttons{
+        display: grid;
+        grid-template-columns: repeat(4,60px);
+        grid-auto-rows: 60px;
+        gap: 17.5px;
+        border-radius: 10px;
+        padding: 10px;
+        align-items: center;
+        justify-content: center;
+    }
+    .button {
+        width: 60px;
+        height: 60px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: transform 0.15s ease, background-color 0.25s ease, box-shadow 0.25s ease;
+        font-size: 18px;
+        font-weight: 600;
+        border-radius: 20px;
+        border: 1px solid rgba(255, 255, 255, 0.12);
+        box-shadow:
+            0 20px 40px rgba(0, 0, 0, 0.28),
+            inset 0 1px 0 rgba(255, 255, 255, 0.1);
+        backdrop-filter: blur(4px);
+    }
+    .button:hover {
+        transform: translateY(-2px);
+        background: rgba(255, 255, 255, 0.18);
+        box-shadow:
+            0 24px 40px rgba(0, 0, 0, 0.3),
+            inset 0 1px 0 rgba(255, 255, 255, 0.12);
+    }
+    .num {
+        background: rgba(255, 255, 255, 0.12);
+        color: #f8fafc;
+    }
+    .operator {
+        background: rgba(63, 81, 181, 0.95);
+        color: #f8fafc;
+        border-color: rgba(96, 125, 139, 0.35);
+    }
+    .specialchar1,
+    .specialchar2 {
+        background: linear-gradient(135deg, #f97316, violet);
+        color: white;
+        border: none;
+        box-shadow: 0 18px 30px rgba(239, 68, 68, 0.35);
+    }
+    
+    .equ {
+        background: linear-gradient(135deg, #38bdf8, #2563eb);
+        color: white;
+        border: none;
+        box-shadow: 0 22px 35px rgba(37, 99, 235, 0.35);
+    }
+    .equ:hover {
+        transform: translateY(-2px);
+        background: linear-gradient(135deg, #60a5fa, #3b82f6);
+    }
+    .zero{
+      grid-column: span 2;
+      width: 140px;
+      height: 60px;
+    }
+</style>
+<body>
+    <div class="container">
+        <div class="input">
+            <div class="display"></div>
+        </div>
+        <div class="buttons">
+            <div class="button specialchar1">AC</div>
+            <div class="button specialchar2">DEL</div>
+            <div class="button num operator">%</div>
+            <div class="button num operator">/</div>
+            <div class="button num">7</div>
+            <div class="button num">8</div>
+            <div class="button num">9</div>
+            <div class="button num operator">*</div>
+            <div class="button num">4</div>
+            <div class="button num">5</div>
+            <div class="button num">6</div>
+            <div class="button num operator">-</div>
+            <div class="button num">1</div>
+            <div class="button num">2</div>
+            <div class="button num">3</div>
+            <div class="button num operator">+</div>
+            <div class="button num zero">0</div>
+            <div class="button num">.</div>
+            <div class="button equ">=</div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
