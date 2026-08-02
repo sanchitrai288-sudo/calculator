@@ -39,5 +39,5 @@ Logic & State Management: Handling user input strings, calculator logic, and bac
 Code Quality: Writing clean, maintainable, and structured frontend code.
 
 This project was created as part of my web development learning journey to strengthen my JavaScript fundamentals and improve my frontend development skills.
-# Screenshot
+# 📸Screenshot
 <img width="1909" height="1031" alt="CC" src="https://github.com/user-attachments/assets/6e9ef00d-ac2e-43a8-a51d-0b9bded9a5cf" />
