@@ -19,7 +19,7 @@
     background:rgb(121, 227, 253);
     }
     .container {
-        width: 340px;
+        width: 420px;
         min-height: 520px;
         display: flex;
         flex-direction: column;
@@ -32,7 +32,7 @@
     }
     .display{
         height: 80px;
-        width: 295px;
+        width: 375px;
         border-radius: 14px;
         border: 3px solid black;
         display: flex;
@@ -45,11 +45,10 @@
         -webkit-backdrop-filter: blur(4px);
         backdrop-filter: blur(4px);
         color: yellow;
-        backdrop-filter: blur(4px);
     }
     .buttons{
         display: grid;
-        grid-template-columns: repeat(4,60px);
+        grid-template-columns: repeat(5,60px);
         grid-auto-rows: 60px;
         gap: 17.5px;
         border-radius: 10px;
@@ -75,7 +74,7 @@
     }
     .button:hover {
         transform: translateY(-2px);
-        background: rgba(255, 255, 255, 0.18);
+        background: rgba(209, 119, 9, 0.99);
         box-shadow:
             0 24px 40px rgba(0, 0, 0, 0.3),
             inset 0 1px 0 rgba(255, 255, 255, 0.12);
@@ -85,32 +84,30 @@
         color: #f8fafc;
     }
     .operator {
-        background: rgba(63, 81, 181, 0.95);
+        background: linear-gradient(135deg, #f97316, #2563eb);
         color: #f8fafc;
         border-color: rgba(96, 125, 139, 0.35);
     }
-    .specialchar1,
+    .specialchar1{
+        background: linear-gradient(135deg, #f97316, #2563eb);
+        color: white;
+        border: none;
+        box-shadow: 0 18px 30px rgba(239, 68, 68, 0.35);
+        width: 135px;
+    }
     .specialchar2 {
-        background: linear-gradient(135deg, #f97316, violet);
+        background: linear-gradient(135deg, #f97316, #2563eb);
         color: white;
         border: none;
         box-shadow: 0 18px 30px rgba(239, 68, 68, 0.35);
     }
     
-    .equ {
-        background: linear-gradient(135deg, #38bdf8, #2563eb);
+    .equ,.add {
+        background: linear-gradient(135deg, #f97316, #2563eb);
         color: white;
         border: none;
         box-shadow: 0 22px 35px rgba(37, 99, 235, 0.35);
-    }
-    .equ:hover {
-        transform: translateY(-2px);
-        background: linear-gradient(135deg, #60a5fa, #3b82f6);
-    }
-    .zero{
-      grid-column: span 2;
-      width: 140px;
-      height: 60px;
+        height: 135px
     }
 </style>
 <body>
@@ -119,25 +116,32 @@
             <div class="display"></div>
         </div>
         <div class="buttons">
-            <div class="button specialchar1">AC</div>
-            <div class="button specialchar2">DEL</div>
-            <div class="button num operator">%</div>
-            <div class="button num operator">/</div>
-            <div class="button num">7</div>
-            <div class="button num">8</div>
-            <div class="button num">9</div>
-            <div class="button num operator">*</div>
-            <div class="button num">4</div>
-            <div class="button num">5</div>
-            <div class="button num">6</div>
-            <div class="button num operator">-</div>
-            <div class="button num">1</div>
-            <div class="button num">2</div>
-            <div class="button num">3</div>
-            <div class="button num operator">+</div>
-            <div class="button num zero">0</div>
-            <div class="button num">.</div>
-            <div class="button equ">=</div>
+            <div class="button specialchar1" style="grid-column: 1 / 2;">AC</div>
+            <div class="button specialchar2" style="grid-column: 3 / 4;">C</div>
+            <div class="button num operator" style="grid-column: 4 / 5;">(</div>
+            <div class="button num operator" style="grid-column: 5 / 6;">)</div>
+
+            <div class="button num" style="grid-column: 1 / 2;">7</div>
+            <div class="button num" style="grid-column: 2 / 3;">8</div>
+            <div class="button num" style="grid-column: 3 / 4;">9</div>
+            <div class="button num operator" style="grid-column: 4 / 5;">-</div>
+            <div class="button num operator add" style="grid-column: 5 / 6; grid-row: 2 / 4;">+</div>
+
+            <div class="button num" style="grid-column: 1 / 2; grid-row: 3 / 4;">4</div>
+            <div class="button num" style="grid-column: 2 / 3; grid-row: 3 / 4;">5</div>
+            <div class="button num" style="grid-column: 3 / 4; grid-row: 3 / 4;">6</div>
+            <div class="button num operator" style="grid-column: 4 / 5; grid-row: 3 / 4;">*</div>
+
+            <div class="button num" style="grid-column: 1 / 2; grid-row: 4 / 5;">1</div>
+            <div class="button num" style="grid-column: 2 / 3; grid-row: 4 / 5;">2</div>
+            <div class="button num" style="grid-column: 3 / 4; grid-row: 4 / 5;">3</div>
+            <div class="button num operator" style="grid-column: 4 / 5; grid-row: 4 / 5;">/</div>
+            <div class="button equ" style="grid-column: 5 / 6; grid-row: 4 / 6;">=</div>
+
+            <div class="button num" style="grid-column: 1 / 2; grid-row: 5 / 6;">00</div>
+            <div class="button num" style="grid-column: 2 / 3; grid-row: 5 / 6;">0</div>
+            <div class="button num" style="grid-column: 3 / 4; grid-row: 5 / 6;">.</div>
+            <div class="button num operator" style="grid-column: 4 / 5; grid-row: 5 / 6;">%</div>
         </div>
     </div>
     <script src="script.js"></script>
