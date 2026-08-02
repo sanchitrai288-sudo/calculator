@@ -42,6 +42,7 @@ This project was created as part of my web development learning journey to stren
 
 # 👀 Live Preview: https://sanchitrai288-sudo.github.io/calculator/
 # 📸Screenshot
+<img width="1539" height="1036" alt="CCC" src="https://github.com/user-attachments/assets/ebb4595d-74b2-4d05-ad88-51fe3194c803" />
 
 
 
