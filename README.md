@@ -42,6 +42,6 @@ This project was created as part of my web development learning journey to stren
 
 # 👀 Live Preview: https://sanchitrai288-sudo.github.io/calculator/
 # 📸Screenshot
-<img width="1582" height="948" alt="Screenshot_2-8-2026_1814_sanchitrai288-sudo github io" src="https://github.com/user-attachments/assets/66a42ae4-05b7-4be8-9175-5a10bd9dd1fa" />
-<img width="1582" height="948" alt="Screenshot_2-8-2026_1814_sanchitrai288-sudo github io" src="https://github.com/user-attachments/assets/5d7db7a1-71cb-4ca1-9050-2ee2cc535812" />
+<img width="1582" height="948" alt="Screenshot_2-8-2026_1814_sanchitrai288-sudo github io - Copy" src="https://github.com/user-attachments/assets/c7d69313-c7f5-429c-8775-d9c20264e47c" />
+
 
